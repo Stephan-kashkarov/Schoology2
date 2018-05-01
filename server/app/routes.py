@@ -2,6 +2,10 @@ from app import app
 
 
 @app.route("/")
-@app.route("/hello")
+@app.route("/hello", methods=['GET', 'POST'])
 def hello():
-	return "hello, world!"
+	if request.form["string"]:
+		string = request.from["string"]
+	else:
+		string = 'Hello, World!'
+	return string
