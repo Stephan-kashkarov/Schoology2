@@ -1,4 +1,9 @@
 - Authentication server
-/checkuser: Post
-POST: username, password
-Return: an unique token
+
+/hello:
+get {
+	return string(hello, world!)
+},
+post (string) {
+	update string
+}
