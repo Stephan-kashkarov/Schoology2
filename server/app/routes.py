@@ -13,3 +13,13 @@ def hello():
 	except:
 		abort(400)
 	return string
+
+
+@app.route("/username", methods=["GET", "POST"])
+def username():
+	pass
+
+
+@app.route("/pass_hash", methods=["GET", "POST"])
+def pass_hash():
+	pass
