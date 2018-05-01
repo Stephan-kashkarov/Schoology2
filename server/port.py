@@ -1,7 +1,7 @@
 from app import app, db
 from app.models import User, Post, Following
 
-print("-" * 25 + "\n Ports server is ONLINE \n" + "-" * 25)
+print('\n' + "-" * 25 + "\n Ports server is ONLINE \n" + "-" * 25 + '\n')
 
 
 @app.shell_context_processor

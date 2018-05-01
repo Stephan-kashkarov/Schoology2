@@ -21,6 +21,6 @@ def username():
 	pass
 
 
-@app.route("")
+@app.route("/regester")
 def pass_hash():
 	pass
