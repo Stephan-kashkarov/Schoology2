@@ -7,7 +7,8 @@ from flask import request
 def hello():
 	try:
 		if request.form["string"]:
-			string = request.from["string"]
+			form = request.form
+			string = form["string"]
 		else:
 			string = 'Hello, World!'
 	except:

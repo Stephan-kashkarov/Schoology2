@@ -35,3 +35,8 @@ class Post(db.Model):
 
 	def __repr__(self):
 		return "<Post: {} authoured by {}>".format(self.title, self.user_id)
+
+
+class Following(db.Model):
+	follower_id = db.Column(db.Integer, primary_key=True, nullable=False)
+	following_id = db.Column(db.Integer, primary_key=True, nullable=False)
