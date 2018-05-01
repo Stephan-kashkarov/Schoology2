@@ -1,5 +1,5 @@
 from app import app
-from flask import request
+from flask import request, abort
 
 
 @app.route("/")
@@ -16,11 +16,11 @@ def hello():
 	return string
 
 
-@app.route("/username", methods=["GET", "POST"])
+@app.route("/profile", methods=["POST"])
 def username():
 	pass
 
 
-@app.route("/pass_hash", methods=["GET", "POST"])
+@app.route("")
 def pass_hash():
 	pass
